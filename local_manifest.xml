@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- fetching sources -->
+  <remote name="kush"
+	  fetch="https://github.com/kushagrasinghbisen" />
+
+  <remote name="arrow"
+          fetch="https://github.com/ArrowOS"
+	  revision="refs/heads/arrow-13.1" />
+
+  <!-- device Source -->
+  <project path="device/realme/RMX3171" name="android_device_realme_RMX3171" remote="kush" revision="arrow-13.1" clone-depth="1" />
+  <project path="vendor/realme/RMX3171" name="android_vendor_realme_RMX3171" remote="kush" revision="arrow-13.1" clone-depth="1" />
+  <project path="kernel/realme/RMX3171" name="android_kernel_realme_RMX3171" remote="kush" revision="Q" clone-depth="1" />
+  <!-- hardware-mediatek -->
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="arrow" clone-depth="1" />
+  <!-- IMS -->
+  <project path="vendor/realme/RMX3171-ims" name="android_vendor_realme_RMX3171-ims" remote="kush" clone-depth="1" />
+  <!-- Sepolicy -->
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="arrow" clone-depth="1" />
+  <!-- Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r353983c1" name="clang-r353983c1" remote="kush" revision="master" clone-depth="1" />
+</manifest>
